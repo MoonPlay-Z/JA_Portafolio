@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Página Principal -->
+  <url>
+    <loc>https://juanarcila.dev/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <!-- Alternate language versions -->
+    <xhtml:link rel="alternate" hreflang="es" href="https://juanarcila.dev/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://juanarcila.dev/"/>
+    <xhtml:link rel="alternate" hreflang="et" href="https://juanarcila.dev/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://juanarcila.dev/"/>
+  </url>
+
+  <!-- Currículum / CV -->
+  <url>
+    <loc>https://juanarcila.dev/cv</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://juanarcila.dev/cv"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://juanarcila.dev/cv"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://juanarcila.dev/cv"/>
+  </url>
+
+  <!-- Contacto -->
+  <url>
+    <loc>https://juanarcila.dev/contact</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://juanarcila.dev/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://juanarcila.dev/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://juanarcila.dev/contact"/>
+  </url>
+
+</urlset>

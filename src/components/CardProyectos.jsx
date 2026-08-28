@@ -5,6 +5,15 @@ import uptpJJM from "../assets/UPTP-Portada.webp";
 export const CardProyectos = () => {
     const Proyectos = [
         {
+            img: uptpJJM,
+            alt: "Gestor de Inventario & POS SaaS",
+            titulo: "Gestor de Inventario & POS",
+            descripcion: "Plataforma SaaS multi-tenant de punto de venta y gestión de inventario. Arquitectura fullstack con API REST, autenticación JWT, control de roles y empaquetado como aplicación de escritorio cross-platform con Electron.",
+            tecnologias: ["React 18", "Vite", "Node.js", "Express", "Prisma ORM", "PostgreSQL", "JWT", "Electron", "SCRUM"],
+            link: "https://github.com/MoonPlay-Z",
+            badge: "Desktop + Web"
+        },
+        {
             img: biomedImage,
             alt: "Proyecto Biomed",
             titulo: "Proyecto Biomed",
@@ -16,17 +25,9 @@ export const CardProyectos = () => {
             img: uptpJJM,
             alt: "Sistema UPTP JJM",
             titulo: "Sistema UPTP JJM",
-            descripcion: "Sistema institucional de gestión académica, registro de calificaciones y generación de actas.",
-            tecnologias: ["PHP", "MVC", "PostgreSQL", "Routes", "SEO"],
+            descripcion: "Sistema institucional de gestión académica, registro de calificaciones y generación de actas universitarias.",
+            tecnologias: ["PHP", "MVC", "PostgreSQL", "Bootstrap", "Routes"],
             link: "https://uptp.sytes.net/"
-        },
-        {
-            img: biomedImage,
-            alt: "Gestión Académica",
-            titulo: "Gestión Académica",
-            descripcion: "Panel de administración y control de procesos educativos con sincronización en tiempo real.",
-            tecnologias: ["PHP", "MVC", "Node.js", "Express", "MongoDB"],
-            link: "https://biomed-sp.vercel.app/"
         },
         {
             img: biomedImage,
@@ -54,6 +55,12 @@ export const CardProyectos = () => {
                             loading="lazy"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                        {/* Badge de tipo de proyecto */}
+                        {proyecto.badge && (
+                            <span className="absolute top-2 right-2 bg-blue-600 text-white text-[10px] font-bold px-2 py-1 rounded-full shadow-md uppercase tracking-wide">
+                                {proyecto.badge}
+                            </span>
+                        )}
                     </div>
                     
                     {/* Información del Proyecto */}

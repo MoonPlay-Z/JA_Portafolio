@@ -1,0 +1,12 @@
+# robots.txt — Juan Arcila Portfolio
+# https://juanarcila.dev
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow build artifacts (though they shouldn't be public)
+Disallow: /assets/
+
+# Sitemap location
+Sitemap: https://juanarcila.dev/sitemap.xml
