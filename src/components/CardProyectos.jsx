@@ -10,16 +10,17 @@ export const CardProyectos = () => {
             titulo: "Gestor de Inventario & POS",
             descripcion: "Plataforma SaaS multi-tenant de punto de venta y gestión de inventario. Arquitectura fullstack con API REST, autenticación JWT, control de roles y empaquetado como aplicación de escritorio cross-platform con Electron.",
             tecnologias: ["React 18", "Vite", "Node.js", "Express", "Prisma ORM", "PostgreSQL", "JWT", "Electron", "SCRUM"],
-            link: "https://github.com/MoonPlay-Z",
+            link: "https://gestor-inventario-pos.netlify.app/",
             badge: "Desktop + Web"
         },
         {
             img: biomedImage,
-            alt: "Proyecto Biomed",
-            titulo: "Proyecto Biomed",
+            alt: "Proyecto Taller Electromidicina",
+            titulo: "Proyecto Taller Electromidicina",
             descripcion: "Plataforma de gestión para el sector de biomedicina, con flujos interactivos de pacientes y reportes.",
             tecnologias: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
-            link: "https://biomed-sp.netlify.app/"
+            link: "https://biomed-sp.netlify.app/",
+            badge: "Web"
         },
         {
             img: uptpJJM,
@@ -27,7 +28,8 @@ export const CardProyectos = () => {
             titulo: "Sistema UPTP JJM",
             descripcion: "Sistema institucional de gestión académica, registro de calificaciones y generación de actas universitarias.",
             tecnologias: ["PHP", "MVC", "PostgreSQL", "Bootstrap", "Routes"],
-            link: "https://uptp.sytes.net/"
+            link: "https://uptp.sytes.net/",
+            badge: "Desktop + Web"
         },
         {
             img: biomedImage,
@@ -35,7 +37,8 @@ export const CardProyectos = () => {
             titulo: "Plataforma Médica",
             descripcion: "Portal web responsivo y optimizado para la reserva de citas y gestión de expedientes de salud.",
             tecnologias: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
-            link: "https://biomed-sp.vercel.app/"
+            link: "https://biomed-sp.vercel.app/",
+            badge: "Web"
         }
     ];
 
