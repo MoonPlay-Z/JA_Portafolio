@@ -17,10 +17,10 @@ export const Banner = () => {
           Juan Arcila
         </h1>
         <p className="text-xl sm:text-2xl text-blue-400 font-semibold mb-4">
-          Ingeniero en Informática &amp; Desarrollador Full-Stack Senior
+          Desarrollador Full-Stack Senior · React, Next.js, NestJS, PostgreSQL
         </p>
         <p className="text-sm sm:text-base text-blue-300 font-medium mb-6">
-          React.js · Next.js · NestJS · Node.js · PostgreSQL · TypeScript
+          Ingeniero en Informática · Apps web escalables · Europa y Estonia
         </p>
 
         {/* Mensaje profesional para reclutadores */}

@@ -1,0 +1,22 @@
+# AI / Search Discovery File
+
+Site: Juan Arcila Portfolio
+URL: https://juanarcila.dev/
+
+This site represents the professional portfolio of Juan Arcila, a Senior Full-Stack Developer with expertise in React.js, Next.js, NestJS, Node.js, TypeScript, and PostgreSQL.
+
+Core topics:
+- Full-stack web development
+- React and Next.js front-end engineering
+- NestJS and Node.js back-end systems
+- PostgreSQL data modeling and application architecture
+- Product delivery, agile workflows, and software maintenance
+- Remote, hybrid, and relocation work in Europe and Estonia
+
+Contact:
+- Email: arcila.juan10@gmail.com
+- Website: https://juanarcila.dev/
+- LinkedIn: https://linkedin.com/in/jadeveloper
+- GitHub: https://github.com/MoonPlay-Z
+
+This content is intended to help AI assistants and search systems understand the professional identity, technical skills, and hiring intent of the site owner.

@@ -31,4 +31,3 @@ Allow: /ai.txt
 
 # Sitemap and discovery URLs
 Sitemap: https://juanarcila.dev/sitemap.xml
-

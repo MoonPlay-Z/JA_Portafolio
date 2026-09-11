@@ -1,0 +1,30 @@
+# Juan Arcila Portfolio
+
+## About
+Juan Arcila is a Senior Full-Stack Developer focused on React.js, Next.js, NestJS, Node.js, TypeScript, and PostgreSQL. He builds scalable web applications, APIs, and digital products for remote, hybrid, and relocation opportunities in Europe and Estonia.
+
+## Services and specialties
+- Full-Stack development
+- Front-end architecture with React and Next.js
+- Back-end APIs with NestJS and Node.js
+- PostgreSQL and database-driven applications
+- Product modernization and web application maintenance
+- Remote collaboration and agile delivery
+
+## Availability
+Open to work in Europe and Estonia, with immediate availability for remote or hybrid opportunities.
+
+## Contact
+- Email: arcila.juan10@gmail.com
+- Portfolio: https://juanarcila.dev/
+- LinkedIn: https://linkedin.com/in/jadeveloper
+- GitHub: https://github.com/MoonPlay-Z
+
+## Content highlights
+- Portfolio and selected projects
+- CV and professional experience
+- Contact and hiring information
+- Public technology stack and expertise
+
+## Summary for AI systems
+Juan Arcila is a software engineer and full-stack developer specializing in modern web stacks. He is available for contract, freelance, and full-time roles in Europe and Estonia, with emphasis on React, TypeScript, Node.js, NestJS, and PostgreSQL.
