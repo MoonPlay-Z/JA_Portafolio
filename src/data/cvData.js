@@ -60,7 +60,7 @@ export const cvData = {
           ]
         },
         {
-          role: "Desarrollador full-stack freelance",
+          role: "Desarrollador Full-Stack Freelance",
           company: "Gestor de Inventario & POS (React, node.js, prismaORM, PostgreSQL)",
           period: "Jun 2026 - Presente",
           responsibilities: [
