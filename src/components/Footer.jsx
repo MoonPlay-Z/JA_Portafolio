@@ -22,8 +22,8 @@ export const Footer = () => {
             <div className="flex space-x-4 mb-6">
               <a href="https://github.com/MoonPlay-Z" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors text-xl"><FaGithub /></a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors text-xl"><FaTwitter /></a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors text-xl"><FaLinkedin /></a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors text-xl"><FaInstagram /></a>
+              <a href="https://www.linkedin.com/in/jadeveloper" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors text-xl"><FaLinkedin /></a>
+              <a href="https://www.instagram.com/j_u_a_n__a_l_f_o_n_s_o" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors text-xl"><FaInstagram /></a>
             </div>
           </div>
 

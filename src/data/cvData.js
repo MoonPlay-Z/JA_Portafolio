@@ -60,6 +60,16 @@ export const cvData = {
           ]
         },
         {
+          role: "Desarrollador Web Freelance",
+          company: "Proyectos Independientes (React, Next.js & NestJS)",
+          period: "Jun 2022 - Presente",
+          responsibilities: [
+            "Desarrollo de extremo a extremo de plataformas e-commerce y aplicaciones web modernas utilizando Next.js para mejorar el SEO y rendimiento (SSR/ISR).",
+            "Construcción de APIs robustas utilizando NestJS (TypeScript) con persistencia de datos en PostgreSQL y MongoDB.",
+            "Optimización de diseño responsivo móvil (Mobile-first) y aplicación de mejores prácticas de UI/UX con Tailwind CSS."
+          ]
+        },
+        {
           role: "Técnico de Soporte e Infraestructura IT (Medio Tiempo)",
           company: "Compu-Ofertas",
           period: "Ene 2020 - Presente",
