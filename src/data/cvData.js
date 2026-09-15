@@ -60,12 +60,12 @@ export const cvData = {
           ]
         },
         {
-          role: "Desarrollador Web Freelance",
-          company: "Proyectos Independientes (React, Next.js & NestJS)",
-          period: "Jun 2022 - Presente",
+          role: "Desarrollador full-stack freelance",
+          company: "Gestor de Inventario & POS (React, node.js, prismaORM, PostgreSQL)",
+          period: "Jun 2026 - Presente",
           responsibilities: [
-            "Desarrollo de extremo a extremo de plataformas e-commerce y aplicaciones web modernas utilizando Next.js para mejorar el SEO y rendimiento (SSR/ISR).",
-            "Construcción de APIs robustas utilizando NestJS (TypeScript) con persistencia de datos en PostgreSQL y MongoDB.",
+            "Desarrollo desde cero de sistema de procesamiento de productos y facturas utilizando React y Node.js para mejorar el SEO y rendimiento (SSR/ISR).",
+            "Construcción de APIs robustas utilizando NestJS (JavaScript) con persistencia de datos en PostgreSQL y prismaORM.",
             "Optimización de diseño responsivo móvil (Mobile-first) y aplicación de mejores prácticas de UI/UX con Tailwind CSS."
           ]
         },
