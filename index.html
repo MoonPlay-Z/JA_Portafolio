@@ -2,8 +2,14 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+
+    <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="/Logo-white.svg" />
-    <link rel="apple-touch-icon" href="/Logo-white.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/icons/icon-512.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-192.png" />
+    <link rel="manifest" href="/manifest.json" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0a0f1e" />
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
@@ -11,7 +17,6 @@
     <!-- SEO: Primary Meta Tags -->
     <title>Juan Arcila | Desarrollador Full-Stack Senior | React, Next.js, NestJS, PostgreSQL</title>
     <meta name="description" content="Juan Arcila es Desarrollador Full-Stack Senior especializado en React.js, Next.js, NestJS, Node.js, TypeScript y PostgreSQL. Disponible para proyectos remotos, híbridos y relocalización en Europa y Estonia." />
-    <meta name="keywords" content="Juan Arcila, Desarrollador Full-Stack, React Developer, Next.js Developer, NestJS Developer, Node.js, PostgreSQL, TypeScript, Ingeniero en Informática, Europa, Estonia, React arendaja, Freelance developer" />
     <meta name="author" content="Juan Arcila" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <link rel="canonical" href="https://juanarcila.dev/" />
@@ -26,7 +31,7 @@
     <meta property="og:image:height" content="1024" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:alt" content="Juan Arcila – Senior Full-Stack Developer" />
-    <meta property="og:locale" content="es_ES" />
+    <meta property="og:locale" content="es_VE" />
     <meta property="og:locale:alternate" content="en_US" />
     <meta property="og:locale:alternate" content="et_EE" />
     <meta property="og:site_name" content="Juan Arcila – Portfolio" />
@@ -40,55 +45,71 @@
     <meta name="twitter:creator" content="@jadeveloper" />
     <meta name="twitter:site" content="@jadeveloper" />
 
-    <!-- SEO: Geo-targeting for Estonia & Europe -->
-    <meta name="geo.region" content="EE" />
-    <meta name="geo.placename" content="Tallinn, Estonia" />
-    <meta name="ICBM" content="59.437, 24.7536" />
+    <!-- SEO: Geo-targeting (ubicación real: Venezuela) -->
+    <meta name="geo.region" content="VE-J" />
+    <meta name="geo.placename" content="Acarigua, Portuguesa, Venezuela" />
+    <meta name="ICBM" content="9.5597, -69.2149" />
 
-    <!-- SEO: Additional language hints for search engines -->
+    <!-- SEO: hreflang -->
     <link rel="alternate" hreflang="es" href="https://juanarcila.dev/" />
-    <link rel="alternate" hreflang="en" href="https://juanarcila.dev/" />
-    <link rel="alternate" hreflang="et" href="https://juanarcila.dev/" />
     <link rel="alternate" hreflang="x-default" href="https://juanarcila.dev/" />
 
-    <!-- Structured Data: JSON-LD for Google Rich Results -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Juan Arcila",
-      "jobTitle": "Senior Full-Stack Developer",
-      "description": "Computer Science Engineer and Senior Full-Stack Developer specializing in React.js, Next.js, NestJS, Node.js, TypeScript, and PostgreSQL. Available for remote, hybrid, or relocation opportunities in Europe and Estonia.",
-      "url": "https://juanarcila.dev",
-      "email": "arcila.juan10@gmail.com",
-      "telephone": "+58-412-7723148",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "VE"
-      },
-      "sameAs": [
-        "https://linkedin.com/in/jadeveloper",
-        "https://github.com/MoonPlay-Z"
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Juan Arcila",
+    "url": "https://juanarcila.dev",
+    "image": "https://juanarcila.dev/og-image.png",
+    "jobTitle": "Senior Full-Stack Developer",
+    "description": "Ingeniero en Informática y Senior Full-Stack Developer especializado en React.js, Next.js, NestJS, Node.js, TypeScript y PostgreSQL. Disponible para remoto, híbrido o reubicación en Europa y Estonia.",
+    "email": "mailto:arcila.juan10@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Acarigua",
+      "addressRegion": "Portuguesa",
+      "addressCountry": "VE"
+    },
+    "homeLocation": {
+      "@type": "Place",
+      "name": "Acarigua-Araure, Portuguesa, Venezuela"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Acarigua" },
+      { "@type": "City", "name": "Araure" },
+      { "@type": "AdministrativeArea", "name": "Portuguesa" },
+      { "@type": "City", "name": "Barquisimeto" }
+    ],
+    "sameAs": [
+      "https://linkedin.com/in/jadeveloper",
+      "https://github.com/MoonPlay-Z"
+    ],
+    "knowsAbout": [
+      "React.js", "Next.js", "NestJS", "Node.js", "PostgreSQL",
+      "TypeScript", "JavaScript", "MongoDB", "Tailwind CSS",
+      "REST API", "Full-Stack Development", "Web Application Architecture"
+    ],
+    "knowsLanguage": [
+      { "@type": "Language", "name": "Spanish", "alternateName": "es" },
+      { "@type": "Language", "name": "English", "alternateName": "en" }
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "UPTP Juan de Jesús Montilla University"
+    },
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Full-Stack Developer",
+      "occupationLocation": [
+        { "@type": "Country", "name": "Estonia" },
+        { "@type": "AdministrativeArea", "name": "Europe" }
       ],
-      "knowsAbout": [
-        "React.js", "Next.js", "NestJS", "Node.js", "PostgreSQL",
-        "TypeScript", "JavaScript", "MongoDB", "Tailwind CSS",
-        "SCRUM", "XP", "Agile Methodologies", "REST API",
-        "Full-Stack Development", "Web Application Architecture"
-      ],
-      "knowsLanguage": [
-        { "@type": "Language", "name": "Spanish", "alternateName": "es" },
-        { "@type": "Language", "name": "English", "alternateName": "en" }
-      ],
-      "alumniOf": {
-        "@type": "CollegeOrUniversity",
-        "name": "UPTP Juan de Jesús Montilla University"
-      },
-      "seeks": {
-        "@type": "Demand",
-        "description": "Full-Stack Developer position (React/Next.js/NestJS) – Remote, Hybrid, or Relocation to Europe/Estonia"
-      }
+      "skills": "React.js, Next.js, NestJS, Node.js, TypeScript, PostgreSQL"
     }
+  }
+}
     </script>
   </head>
   <body>
