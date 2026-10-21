@@ -1,7 +1,10 @@
 import React from 'react';
-import { FaGithub, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { useI18n } from '../i18n/locale';
 
 export const Footer = () => {
+  const { t } = useI18n();
+
   return (
     <footer className="bg-gray-900 text-gray-300 border-t border-gray-800 print:hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -9,21 +12,43 @@ export const Footer = () => {
           
           {/* Columna 1: Información */}
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-white tracking-wider">JA Developer</h2>
+            <h2 className="text-2xl font-bold text-white tracking-wider">{t.footer.brand}</h2>
             <p className="text-sm text-gray-400">
-              Construyendo experiencias digitales excepcionales con React y Tailwind CSS.
+              {t.footer.tagline}
             </p>
           </div>
 
-          
-          {/* Columna 4: Redes Sociales */}
+          {/* Columna 2: Redes Sociales */}
           <div>
-            <h3 className="text-white font-semibold text-lg mb-4">Síguenos</h3>
+            <h3 className="text-white font-semibold text-lg mb-4">{t.footer.follow}</h3>
             <div className="flex space-x-4 mb-6">
-              <a href="https://github.com/MoonPlay-Z" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors text-xl"><FaGithub /></a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors text-xl"><FaTwitter /></a>
-              <a href="https://www.linkedin.com/in/jadeveloper" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors text-xl"><FaLinkedin /></a>
-              <a href="https://www.instagram.com/j_u_a_n__a_l_f_o_n_s_o" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors text-xl"><FaInstagram /></a>
+              <a
+                href="https://github.com/MoonPlay-Z"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                className="hover:text-white transition-colors text-xl"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/jadeveloper"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="hover:text-white transition-colors text-xl"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                href="https://www.instagram.com/j_u_a_n__a_l_f_o_n_s_o"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="hover:text-white transition-colors text-xl"
+              >
+                <FaInstagram />
+              </a>
             </div>
           </div>
 
@@ -31,12 +56,12 @@ export const Footer = () => {
 
         {/* Copyright y cierre con entidad HTML &copy; y año dinámico */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500">
-          <p className="break-words text-center sm:text-left">&copy; {new Date().getFullYear()} ING. Juan Arcila. Todos los derechos reservados.</p>
-          
+          <p className="break-words text-center sm:text-left">
+            &copy; {new Date().getFullYear()} ING. Juan Arcila. {t.footer.rights}
+          </p>
         </div>
 
       </div>
     </footer>
   );
 }
-

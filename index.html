@@ -50,8 +50,10 @@
     <meta name="geo.placename" content="Acarigua, Portuguesa, Venezuela" />
     <meta name="ICBM" content="9.5597, -69.2149" />
 
-    <!-- SEO: hreflang -->
+    <!-- SEO: hreflang — versión multiidioma (es / en / et) -->
     <link rel="alternate" hreflang="es" href="https://juanarcila.dev/" />
+    <link rel="alternate" hreflang="en" href="https://juanarcila.dev/en" />
+    <link rel="alternate" hreflang="et" href="https://juanarcila.dev/et" />
     <link rel="alternate" hreflang="x-default" href="https://juanarcila.dev/" />
 
     <script type="application/ld+json">
@@ -114,6 +116,27 @@
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- Formulario estatico oculto: Netlify Forms necesita detectar el form
+         en el HTML del build para crear el endpoint. La app React renderiza
+         la version real e interactiva en /contact. -->
+    <form
+      name="contacto-portafolio"
+      method="POST"
+      action="/contact"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <input type="hidden" name="form-name" value="contacto-portafolio" />
+      <input type="text" name="nombre" />
+      <input type="email" name="email" />
+      <input type="text" name="asunto" />
+      <textarea name="mensaje"></textarea>
+      <p class="hidden">
+        <label>No llenar si eres humano: <input name="bot-field" /></label>
+      </p>
+    </form>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

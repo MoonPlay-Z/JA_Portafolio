@@ -1,54 +1,21 @@
-import React from 'react';
-import biomedImage from "../assets/biomed-sp-1.webp";
-import uptpJJM from "../assets/UPTP-Portada.webp";
-import gestorPOS from "../assets/GestorPOS.webp";
+import React, { useState } from 'react';
+import { proyectosData } from "../data/proyectosData";
+import { DetalleProyecto } from "./DetalleProyecto";
+import { useI18n } from '../i18n/locale';
 
 export const CardProyectos = () => {
-    const Proyectos = [
-        {
-            img: gestorPOS,
-            alt: "Gestor de Inventario & POS SaaS",
-            titulo: "Gestor de Inventario & POS",
-            descripcion: "Plataforma SaaS multi-tenant de punto de venta y gestión de inventario. Arquitectura fullstack con API REST, autenticación JWT, control de roles y empaquetado como aplicación de escritorio cross-platform con Electron.",
-            tecnologias: ["React 18", "Vite", "Node.js", "Express", "Prisma ORM", "PostgreSQL", "JWT", "Electron", "SCRUM"],
-            link: "https://gestor-inventario-pos.netlify.app/",
-            badge: "Desktop + Web"
-        },
-        {
-            img: biomedImage,
-            alt: "Proyecto Taller Electromidicina",
-            titulo: "Proyecto Taller Electromidicina",
-            descripcion: "Plataforma de gestión para el sector de biomedicina, con flujos interactivos de pacientes y reportes.",
-            tecnologias: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
-            link: "https://biomed-sp.netlify.app/",
-            badge: "Web"
-        },
-        {
-            img: uptpJJM,
-            alt: "Sistema UPTP JJM",
-            titulo: "Sistema UPTP JJM",
-            descripcion: "Sistema institucional de gestión académica, registro de calificaciones y generación de actas universitarias.",
-            tecnologias: ["PHP", "MVC", "PostgreSQL", "Bootstrap", "Routes"],
-            link: "https://uptp.sytes.net/",
-            badge: "Desktop + Web"
-        },
-        {
-            img: biomedImage,
-            alt: "Plataforma Médica",
-            titulo: "Plataforma Médica",
-            descripcion: "Portal web responsivo y optimizado para la reserva de citas y gestión de expedientes de salud.",
-            tecnologias: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
-            link: "https://biomed-sp.vercel.app/",
-            badge: "Web"
-        }
-    ];
+    const { lang, t } = useI18n();
+    const [detalle, setDetalle] = useState(null);
+
+    const Proyectos = proyectosData[lang] || proyectosData.es;
 
     return (
+        <>
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 py-4">
-            {Proyectos.map((proyecto, index) => (
+            {Proyectos.map((proyecto) => (
                 <div
                     className="bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col group"
-                    key={index}
+                    key={proyecto.id}
                 >
                     {/* Contenedor de la Imagen con zoom */}
                     <div className="overflow-hidden aspect-video relative">
@@ -95,11 +62,24 @@ export const CardProyectos = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Ver Proyecto
+                            {t.projects.viewProject}
                         </a>
+
+                        {/* Botón de detalle */}
+                        {proyecto.detalle && (
+                            <button
+                                onClick={() => setDetalle({ lang, datos: proyecto.detalle[lang] || proyecto.detalle.es })}
+                                className="block w-full text-center bg-transparent hover:bg-blue-50 text-blue-700 border border-blue-600 font-bold py-2 px-4 rounded-lg text-sm transition-all duration-300 mt-2"
+                            >
+                                {t.projects.viewCase}
+                            </button>
+                        )}
                     </div>
                 </div>
             ))}
         </div>
+
+        <DetalleProyecto proyecto={detalle} onClose={() => setDetalle(null)} />
+        </>
     )
 }

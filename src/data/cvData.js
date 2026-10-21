@@ -2,8 +2,8 @@ export const cvData = {
   es: {
     personal: {
       name: "Juan Arcila",
-      title: "Ingeniero en Informática | Desarrollador Full-Stack Senior (React, Next.js, NestJS, PostgreSQL)",
-      email: "arcila.juan10@gmail.com",
+      title: "Ingeniero en Informática | Desarrollador Full-Stack Senior (React, Next.js, NestJS, PostgreSQL) | Remoto & Relocalización Europa",
+      email: "juanaac2003@gmail.com",
       phone: "+58 412-7723148",
       linkedin: "linkedin.com/in/jadeveloper",
       linkedinUrl: "https://linkedin.com/in/jadeveloper",
@@ -28,6 +28,21 @@ export const cvData = {
     experience: {
       title: "Experiencia Laboral",
       items: [
+        {
+          role: "Creador y Lead Developer — GestorPOS (POS e Inventario SaaS)",
+          company: "GestorPOS · Proyecto propio (plataforma multiempresa)",
+          period: "Jun 2026 - Presente",
+          responsibilities: [
+            "Diseñé y construí desde cero GestorPOS, un SaaS multi-inquilino de punto de venta y gestión de inventario para Venezuela: frontend en React 18 y Vite, API REST en Node.js/Express sobre Prisma y PostgreSQL.",
+            "Modelé el núcleo transaccional: ventas idempotentes mediante requestId, bloqueo de filas con SELECT … FOR UPDATE y aritmética monetaria exacta con decimal.js, blindando la integridad ante operaciones concurrentes.",
+            "Implementé la lógica multimoneda: cada empresa opera con su propia tasa del BCV y todos los importes se normalizan a USD, con tolerancia de redondeo explícita en los pagos.",
+            "Construí el POS offline-first con cola de ventas en el dispositivo y reintento automático al recuperar la conexión, operándolo con una sola mano desde el teléfono.",
+            "Desarrollé la app Android con Capacitor (escáner nativo con ML Kit, pantalla completa y descarga nativa) e implementé un sistema de autoactualización que verifica SHA-256, paquete, versión y firma antes de instalar el APK.",
+            "Definí el modelo de acceso por roles (SUPER_ADMIN, EMPRESA, CAJA, INVENTARIO, VISOR) más una API B2B autenticada por X-Api-Key, con rate limiting y rotación de refresh tokens.",
+            "Aseguré la calidad con 22 pruebas unitarias del dominio (node:test), suites E2E en Playwright sobre tres navegadores y escenarios de carga concurrentes con k6.",
+            "Orquesté el despliegue continuo en Netlify (SPA, manifiesto y distribución del APK) con la API en Render y PostgreSQL en Neon, bajo metodología ágil SCRUM/XP."
+          ]
+        },
         {
           role: "Desarrollador de Sistemas de Gestión Académica",
           company: "Universidad UPTP Juan de Jesús Montilla",
@@ -56,16 +71,6 @@ export const cvData = {
           responsibilities: [
             "Desarrollo de extremo a extremo de plataformas e-commerce y aplicaciones web modernas utilizando Next.js para mejorar el SEO y rendimiento (SSR/ISR).",
             "Construcción de APIs robustas utilizando NestJS (TypeScript) con persistencia de datos en PostgreSQL y MongoDB.",
-            "Optimización de diseño responsivo móvil (Mobile-first) y aplicación de mejores prácticas de UI/UX con Tailwind CSS."
-          ]
-        },
-        {
-          role: "Desarrollador Full-Stack Freelance",
-          company: "Gestor de Inventario & POS (React, node.js, prismaORM, PostgreSQL)",
-          period: "Jun 2026 - Presente",
-          responsibilities: [
-            "Desarrollo desde cero de sistema de procesamiento de productos y facturas utilizando React y Node.js para mejorar el SEO y rendimiento (SSR/ISR).",
-            "Construcción de APIs robustas utilizando NestJS (JavaScript) con persistencia de datos en PostgreSQL y prismaORM.",
             "Optimización de diseño responsivo móvil (Mobile-first) y aplicación de mejores prácticas de UI/UX con Tailwind CSS."
           ]
         },
@@ -124,8 +129,8 @@ export const cvData = {
   en: {
     personal: {
       name: "Juan Arcila",
-      title: "Software Engineer | Senior Full-Stack Developer (React, Next.js, NestJS, PostgreSQL)",
-      email: "arcila.juan10@gmail.com",
+      title: "Software Engineer | Senior Full-Stack Developer (React, Next.js, NestJS, PostgreSQL) | Remote & EU Relocation",
+      email: "juanaac2003@gmail.com",
       phone: "+58 412-7723148",
       linkedin: "linkedin.com/in/jadeveloper",
       linkedinUrl: "https://linkedin.com/in/jadeveloper",
@@ -134,7 +139,7 @@ export const cvData = {
     },
     profile: {
       title: "Professional Profile",
-      description: "Computer Science Engineer and Full-Stack Developer with a robust background in web development, specializing in building highly scalable applications using React.js, Next.js, NestJS, Node.js, and PostgreSQL. Extensive experience in designing and optimizing relational and NoSQL databases, alongside a strong track record of applying agile methodologies (SCRUM and XP) in high-performance environments. Responsible, detail-oriented professional with technical leadership capabilities and a proactive commitment to the full software development lifecycle to deliver excellence.",
+      description: "Computer Science Engineer and Full-Stack Developer with a robust background in web development, specializing in building highly scalable applications using React.js, Next.js, NestJS, Node.js, and PostgreSQL. Open to remote opportunities worldwide and relocation to Europe. Extensive experience in designing and optimizing relational and NoSQL databases, alongside a strong track record of applying agile methodologies (SCRUM and XP) in high-performance environments. Responsible, detail-oriented professional with technical leadership capabilities and a proactive commitment to the full software development lifecycle to deliver excellence.",
     },
     education: {
       title: "Education",
@@ -150,6 +155,21 @@ export const cvData = {
     experience: {
       title: "Work Experience",
       items: [
+        {
+          role: "Creator & Lead Developer — GestorPOS (Point of Sale & Inventory SaaS)",
+          company: "GestorPOS · Own project (multi-tenant platform)",
+          period: "Jun 2026 - Present",
+          responsibilities: [
+            "Designed and built GestorPOS from scratch, a multi-tenant point of sale and inventory SaaS for Venezuela: React 18 and Vite frontend with a REST API on Node.js/Express over Prisma and PostgreSQL.",
+            "Modeled the transactional core: idempotent sales via requestId, row-level locking with SELECT … FOR UPDATE and exact monetary arithmetic with decimal.js, hardening integrity under concurrent operations.",
+            "Implemented the multi-currency logic: each company operates with its own BCV exchange rate and all amounts are normalized to USD, with explicit rounding tolerance on payments.",
+            "Built the offline-first POS with an on-device sales queue and automatic retry once connectivity returns, operable single-handed from a phone.",
+            "Developed the Android app with Capacitor (native ML Kit barcode scanner, full-screen mode, native downloads) and a self-update system that verifies SHA-256, package, version and signature before installing the APK.",
+            "Defined the role-based access model (SUPER_ADMIN, EMPRESA, CAJA, INVENTARIO, VISOR) plus a B2B API secured with X-Api-Key, including rate limiting and refresh token rotation.",
+            "Ensured quality with 22 domain unit tests (node:test), Playwright E2E suites across three browsers and concurrent load scenarios with k6.",
+            "Orchestrated continuous deployment on Netlify (SPA, manifest and APK distribution) with the API on Render and PostgreSQL on Neon, under SCRUM/XP agile delivery."
+          ]
+        },
         {
           role: "Academic Management Systems Developer",
           company: "UPTP Juan de Jesús Montilla University",
@@ -236,8 +256,8 @@ export const cvData = {
   et: {
     personal: {
       name: "Juan Arcila",
-      title: "Tarkvarainsener | Senior Full-Stack Arendaja (React, Next.js, NestJS, PostgreSQL)",
-      email: "arcila.juan10@gmail.com",
+      title: "Tarkvarainsener | Senior Full-Stack Arendaja (React, Next.js, NestJS, PostgreSQL) | Kaugtöö & kolimine Euroopasse",
+      email: "juanaac2003@gmail.com",
       phone: "+58 412-7723148",
       linkedin: "linkedin.com/in/jadeveloper",
       linkedinUrl: "https://linkedin.com/in/jadeveloper",
@@ -262,6 +282,21 @@ export const cvData = {
     experience: {
       title: "Töökogemus",
       items: [
+        {
+          role: "Looja ja juhtiv arendaja — GestorPOS (kassa- ja laohalduse SaaS)",
+          company: "GestorPOS · Omaprojekt (mitme ettevõtja platvorm)",
+          period: "Juuni 2026 - Praeguni",
+          responsibilities: [
+            "Kavandasin ja ehitasin nullist GestorPOS-i, mitme ettevõtja kassa- ja laohalduse SaaS-e Venetsuale: React 18 ja Vite eesliides ning Node.js/Express REST API Prisma ja PostgreSQL-i peal.",
+            "Modelleerisin tehingute tuuma: idempotentsed müügid requestId abil, ridade lukustamine SELECT … FOR UPDATE abil ning täpne rahaarvutus decimal.js-ga, tagades terviklikkuse samaaegsete toimingute korral.",
+            "Töötasin välja mitme valuuta loogika: iga ettevõte kasutab oma BCV vahetuskurssi ja kõik summad normaliseeritakse USD-ks, maksetel on selgelt määratud ümardamise tolerants.",
+            "Ehitasin offline-first kassasüsteemi, milles müügid salvestatakse seadme ooterežiimi ja saadetakse automaatselt uuesti võrku naastes, mida saab kasutada ühe käega telefonist.",
+            "Arendasin Androidi rakenduse Capacitoriga (looduslik ML Kit voodikoodi skanner, täisekraanirežiim ja looduslikud allalaadimised) ning iseuuenduse, mis kontrollib enne APK paigaldamist SHA-256, paketti, versiooni ja allkirja.",
+            "Kujundasin rollipõhise ligipääsu mudeli (SUPER_ADMIN, EMPRESA, CAJA, INVENTARIO, VISOR) ning X-Api-Keyga kaitstud B2B API, mis sisaldab päringute piiramist ja värskete tokenite rotatsiooni.",
+            "Tagasin kvaliteedi 22 valdkonna ühiktestiga (node:test), Playwrighti E2E komplektidega kolmes brauseris ning k6-ga koormustestidega.",
+            "Juhtisin pidevat juurutamist Netlify platvormil (SPA, manifest ja APK levitus), API Renderil ja PostgreSQL Neonil, kasutades SCRUM/XP agile'i meetodit."
+          ]
+        },
         {
           role: "Akadeemiliste õppeinfosüsteemide arendaja",
           company: "UPTP Juan de Jesús Montilla Ülikool",

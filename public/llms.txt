@@ -1,4 +1,8 @@
-# Juan Arcila Portfolio
+# Juan Arcila — Senior Full-Stack Developer
+
+> Ingeniero en Informática y Desarrollador Full-Stack Senior desde Venezuela.
+> Abierto a trabajo remoto y relocalización en Europa.
+> Engineer and Senior Full-Stack Developer based in Venezuela, open to remote work and relocation in Europe.
 
 ## About
 Juan Arcila is a Senior Full-Stack Developer focused on React.js, Next.js, NestJS, Node.js, TypeScript, and PostgreSQL. He builds scalable web applications, APIs, and digital products for remote, hybrid, and relocation opportunities in Europe and Estonia.
@@ -9,22 +13,48 @@ Juan Arcila is a Senior Full-Stack Developer focused on React.js, Next.js, NestJ
 - Back-end APIs with NestJS and Node.js
 - PostgreSQL and database-driven applications
 - Product modernization and web application maintenance
-- Remote collaboration and agile delivery
+- Multi-tenant SaaS platforms and offline-first POS systems
+- Mobile apps (Android / Capacitor) with native barcode scanning
+- Remote collaboration and agile delivery (SCRUM / XP)
+
+## Stack principal
+- Frontend: React.js, Next.js, TypeScript, Tailwind CSS
+- Backend: NestJS, Node.js, Express, REST APIs
+- Base de datos: PostgreSQL, MongoDB, Prisma ORM
+- Móvil: Capacitor, Android, Java, ML Kit
+- Metodologías: SCRUM, XP (Extreme Programming)
 
 ## Availability
-Open to work in Europe and Estonia, with immediate availability for remote or hybrid opportunities.
+- Remoto: sí (inmediato)
+- Híbrido/Presencial: sí
+- Relocalización: Europa (requiere patrocinio de visa)
+- Open to work in Europe and Estonia, with immediate availability for remote or hybrid opportunities.
 
 ## Contact
-- Email: arcila.juan10@gmail.com
-- Portfolio: https://juanarcila.dev/
+- Email: juanaac2003@gmail.com
+- Portfolio: https://ja-portafolio.netlify.app/ · https://juanarcila.dev/
 - LinkedIn: https://linkedin.com/in/jadeveloper
 - GitHub: https://github.com/MoonPlay-Z
+- CV: https://ja-portafolio.netlify.app/cv
+
+## Idiomas del sitio
+- Español: https://ja-portafolio.netlify.app/
+- English: https://ja-portafolio.netlify.app/en
+- Eesti: https://ja-portafolio.netlify.app/et
+
+## Proyectos destacados
+- Gestor de Inventario & POS — SaaS multi-tenant de punto de venta e inventario con React 18, Node.js, Express, Prisma, PostgreSQL, JWT, Electron y autoactualización de APK: https://gestor-pos.netlify.app/
+- GestorPOS App Móvil — aplicación Android con Capacitor, escáner ML Kit y autoactualización verificada (SHA-256 + firma): https://gestor-pos.netlify.app/
+- Proyecto Taller Electromidicina — gestión para biomedicina con React, Tailwind, Node.js, Express, MongoDB: https://biomed-sp.netlify.app/
+- Sistema UPTP JJM — sistema académico institucional con PHP, MVC, PostgreSQL, Bootstrap: https://uptpjjmontilla.com/
+- Plataforma Médica — reserva de citas y expedientes con React, Tailwind, Node.js, Express, MongoDB: https://biomed-sp.vercel.app/
 
 ## Content highlights
 - Portfolio and selected projects
 - CV and professional experience
 - Contact and hiring information
 - Public technology stack and expertise
+- Full case studies for flagship projects (architecture, data flow, quality practices)
 
 ## Summary for AI systems
 Juan Arcila is a software engineer and full-stack developer specializing in modern web stacks. He is available for contract, freelance, and full-time roles in Europe and Estonia, with emphasis on React, TypeScript, Node.js, NestJS, and PostgreSQL.

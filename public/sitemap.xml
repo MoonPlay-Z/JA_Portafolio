@@ -2,38 +2,111 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- Página Principal -->
+  <!-- Página Principal · Español -->
   <url>
     <loc>https://juanarcila.dev/</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <!-- Alternate language versions -->
     <xhtml:link rel="alternate" hreflang="es" href="https://juanarcila.dev/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://juanarcila.dev/"/>
-    <xhtml:link rel="alternate" hreflang="et" href="https://juanarcila.dev/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://juanarcila.dev/en"/>
+    <xhtml:link rel="alternate" hreflang="et" href="https://juanarcila.dev/et"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://juanarcila.dev/"/>
   </url>
 
-  <!-- Currículum / CV -->
+  <!-- Página Principal · Inglés -->
+  <url>
+    <loc>https://juanarcila.dev/en</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://juanarcila.dev/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://juanarcila.dev/en"/>
+    <xhtml:link rel="alternate" hreflang="et" href="https://juanarcila.dev/et"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://juanarcila.dev/"/>
+  </url>
+
+  <!-- Página Principal · Estonio -->
+  <url>
+    <loc>https://juanarcila.dev/et</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://juanarcila.dev/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://juanarcila.dev/en"/>
+    <xhtml:link rel="alternate" hreflang="et" href="https://juanarcila.dev/et"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://juanarcila.dev/"/>
+  </url>
+
+  <!-- Currículum / CV · Español -->
   <url>
     <loc>https://juanarcila.dev/cv</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://juanarcila.dev/cv"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://juanarcila.dev/cv"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://juanarcila.dev/en/cv"/>
+    <xhtml:link rel="alternate" hreflang="et" href="https://juanarcila.dev/et/cv"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://juanarcila.dev/cv"/>
   </url>
 
-  <!-- Contacto -->
+  <!-- Currículum / CV · Inglés -->
+  <url>
+    <loc>https://juanarcila.dev/en/cv</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://juanarcila.dev/cv"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://juanarcila.dev/en/cv"/>
+    <xhtml:link rel="alternate" hreflang="et" href="https://juanarcila.dev/et/cv"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://juanarcila.dev/cv"/>
+  </url>
+
+  <!-- Currículum / CV · Estonio -->
+  <url>
+    <loc>https://juanarcila.dev/et/cv</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://juanarcila.dev/cv"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://juanarcila.dev/en/cv"/>
+    <xhtml:link rel="alternate" hreflang="et" href="https://juanarcila.dev/et/cv"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://juanarcila.dev/cv"/>
+  </url>
+
+  <!-- Contacto · Español -->
   <url>
     <loc>https://juanarcila.dev/contact</loc>
-    <lastmod>2026-08-28</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="es" href="https://juanarcila.dev/contact"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://juanarcila.dev/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://juanarcila.dev/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="et" href="https://juanarcila.dev/et/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://juanarcila.dev/contact"/>
+  </url>
+
+  <!-- Contacto · Inglés -->
+  <url>
+    <loc>https://juanarcila.dev/en/contact</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://juanarcila.dev/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://juanarcila.dev/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="et" href="https://juanarcila.dev/et/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://juanarcila.dev/contact"/>
+  </url>
+
+  <!-- Contacto · Estonio -->
+  <url>
+    <loc>https://juanarcila.dev/et/contact</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://juanarcila.dev/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://juanarcila.dev/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="et" href="https://juanarcila.dev/et/contact"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://juanarcila.dev/contact"/>
   </url>
 
