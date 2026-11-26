@@ -30,3 +30,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Bundle de imágenes descargado (las reales viven en public/)
+imagenes-juan-arcila/
+imagenes-juan-arcila.zip

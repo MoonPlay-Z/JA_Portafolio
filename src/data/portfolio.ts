@@ -1,9 +1,3 @@
-import gestorpos from "@/assets/gestorpos-web.png.asset.json";
-import gestorposApp from "@/assets/gestorpos-app.jpg.asset.json";
-import biomed from "@/assets/biomed.jpg.asset.json";
-import uptp from "@/assets/uptp.jpg.asset.json";
-import medica from "@/assets/plataforma-medica.jpg.asset.json";
-
 export const personal = {
   name: "Juan Arcila",
   title: "Desarrollador Full-Stack Senior",
@@ -99,7 +93,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: "gestorpos",
-    image: gestorpos.url,
+    image: "/images/gestorpos-web.png",
     name: "Gestor de Inventario & POS",
     type: "Desktop + Web",
     ownership: "Proyecto personal",
@@ -130,11 +124,11 @@ export const projects: Project[] = [
       { value: "22", label: "tests unitarios de la lógica" },
       { value: "3", label: "navegadores cubiertos en Playwright" },
     ],
-    gallery: [gestorpos.url, gestorposApp.url],
+    gallery: ["/images/gestorpos-web.png", "/images/gestorpos-app.jpg"],
   },
   {
     id: "gestorpos-app",
-    image: gestorposApp.url,
+    image: "/images/gestorpos-app.jpg",
     name: "GestorPOS App Móvil",
     type: "Android",
     ownership: "Proyecto personal",
@@ -161,11 +155,11 @@ export const projects: Project[] = [
       { value: "Sin tienda", label: "actualización propia verificada" },
       { value: "1 código", label: "mismo POS en web, escritorio y móvil" },
     ],
-    gallery: [gestorposApp.url, gestorpos.url],
+    gallery: ["/images/gestorpos-app.jpg", "/images/gestorpos-web.png"],
   },
   {
     id: "biomed",
-    image: biomed.url,
+    image: "/images/biomed.jpg",
     name: "Taller Electromedicina",
     type: "Web",
     ownership: "Proyecto personal",
@@ -191,11 +185,11 @@ export const projects: Project[] = [
       { value: "Estados", label: "reparación, pendiente y entregado" },
       { value: "Web", label: "accesible desde cualquier equipo del taller" },
     ],
-    gallery: [biomed.url, medica.url],
+    gallery: ["/images/biomed.jpg", "/images/plataforma-medica.jpg"],
   },
   {
     id: "uptp",
-    image: uptp.url,
+    image: "/images/uptp.jpg",
     name: "Sistema UPTP JJM",
     type: "Desktop + Web",
     ownership: "Proyecto personal",
@@ -221,11 +215,11 @@ export const projects: Project[] = [
       { value: "Reportes", label: "actas y títulos del mismo dato" },
       { value: "3 años", label: "manteniendo el sistema en producción" },
     ],
-    gallery: [uptp.url],
+    gallery: ["/images/uptp.jpg"],
   },
   {
     id: "plataforma-medica",
-    image: medica.url,
+    image: "/images/plataforma-medica.jpg",
     name: "Plataforma Médica",
     type: "Web",
     ownership: "Proyecto personal",
@@ -251,7 +245,7 @@ export const projects: Project[] = [
       { value: "Sesión", label: "acceso controlado a los datos" },
       { value: "Vercel", label: "publicación continua" },
     ],
-    gallery: [medica.url, biomed.url],
+    gallery: ["/images/plataforma-medica.jpg", "/images/biomed.jpg"],
   },
 ];
 

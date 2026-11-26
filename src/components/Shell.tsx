@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import { Link, Outlet, useRouterState } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { personal } from "@/data/portfolio";
-import logo from "@/assets/logo-isotipo.png.asset.json";
 
 const nav = [
   { to: "/", label: "inicio" },
@@ -45,7 +44,7 @@ export function Shell() {
             onClick={() => setMenuOpen(false)}
           >
             <img
-              src={logo.url}
+              src="/images/logo-isotipo.png"
               alt="Logotipo de Juan Arcila"
               className="h-9 w-auto shrink-0 sm:h-10"
             />

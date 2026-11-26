@@ -8,7 +8,6 @@ import { formatDate } from "@/lib/format";
 import { personal, projects, skills } from "@/data/portfolio";
 import { posts } from "@/data/blog";
 import { Download } from "lucide-react";
-import banner from "@/assets/hero-juan-arcila.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -30,7 +29,7 @@ function Index() {
       <section className="space-y-10">
         <div className="relative isolate overflow-hidden rounded-3xl border border-border bg-secondary shadow-glow">
           <img
-            src={banner.url}
+            src="/images/hero-juan-arcila.png"
             alt=""
             aria-hidden="true"
             fetchPriority="high"
