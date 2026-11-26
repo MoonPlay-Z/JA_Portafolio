@@ -1,40 +1,29 @@
-# Bienvenidos a mi Portafolio
+# Welcome to your Lovable project
 
-Ingeniero de software con +5 años de experiencia construyendo aplicaciones web escalables y de alto rendimiento. Especializado en arquitectura frontend con React.js/Next.js y backend con NestJS/Node.js y PostgreSQL. 
-Disponible para oportunidades de contratación directa, freelance o consultoría técnica en equipos de desarrollo ágiles (SCRUM/XP).
+This project was built with [Lovable](https://lovable.dev).
 
-🔗 **Demo:** https://juanarcila.dev · https://ja-portafolio.netlify.app
+## Build with Lovable
 
-![Stack](https://img.shields.io/badge/React_19-61DAFB?logo=react&logoColor=black) ![Vite](https://img.shields.io/badge/Vite_8-646CFF?logo=vite&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind_v4-38B2AC?logo=tailwind-css&logoColor=white)
+Open your project in the [Lovable editor](https://lovable.dev) and keep building.
 
-## Stack
-React.js · Next.js · NestJS · Node.js · PostgreSQL · TypeScript
+- **Ship faster**: describe what you want to build and Lovable handles the code.
+- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
+- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
 
-## CV
-https://ja-portafolio.netlify.app/cv · https://juanarcila.dev/cv
+## Development
 
-## Idiomas
-Sitio multiidioma con routing por prefijo: español (`/`), inglés (`/en`), estonio (`/et`).
+Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
-## Desarrollo
-
-```bash
-npm ci          # instalar dependencias
-npm run dev     # servidor de desarrollo
-npm run lint    # oxlint
-npm run build   # build de producción → dist/
-npm run preview # previsualizar build
+```sh
+git clone <this-repository-url>
+cd <repository-name>
+npm i
+npm run dev
 ```
 
-## Estructura
+## Built with
 
-- `src/pages/` — rutas (`/`, `/cv`, `/contact` + variantes `/en/*`, `/et/*`)
-- `src/components/` — Header, Footer, CardProyectos, DetalleProyecto, LanguageSwitcher
-- `src/i18n/` — `translations.js` (diccionario es/en/et), `LanguageContext.jsx` (provider), `locale.js` (hook `useI18n`)
-- `src/data/` — `cvData.js` (CV en es/en/et), `proyectosData.js`, `gestorposData.js`, `gestorposAppData.js`
-- `src/pages/CV.module.css` — reglas de impresión A4 del CV
-- `src/components/ContactForm.module.css` — estilos del formulario de contacto
-- `public/` — assets estáticos (CV PDF, logos, og-image, manifest, sitemap, robots, llms.txt, ai.txt)
-- `netlify.toml` — deploy en Netlify (SPA redirect, headers, caché)
-
-Deploy automático en Netlify; CI en GitHub Actions (lint → build → validación).
+- TanStack Start
+- TypeScript
+- React
+- Tailwind CSS

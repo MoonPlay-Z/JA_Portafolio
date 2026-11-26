@@ -28,6 +28,7 @@ Stack principal: React.js · Next.js · NestJS · Node.js · PostgreSQL · TypeS
 ## Posts listos para publicar
 
 **Post 1 — Anuncio de búsqueda**
+
 ```
 Estoy abierto a nuevas oportunidades 🚀
 
@@ -39,6 +40,7 @@ Si tu equipo busca perfiles con experiencia en producto, arquitectura escalable 
 ```
 
 **Post 2 — Proyecto**
+
 ```
 [Proyecto] — Una frase del problema que resolviste + tecnología usada + resultado medible.
 Ej: "Construí GestorPOS, un sistema de punto de venta con Next.js + NestJS que redujo el tiempo de caja en un 30%."
@@ -47,6 +49,7 @@ Ej: "Construí GestorPOS, un sistema de punto de venta con Next.js + NestJS que 
 ```
 
 **Post 3 — Aprendizaje / opinión técnica**
+
 ```
 3 cosas que aprendí migrando un proyecto a NestJS:
 1. ...

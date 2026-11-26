@@ -1,27 +1,36 @@
-# AGENTS.md
+<!-- LOVABLE:BEGIN -->
 
-Personal portfolio SPA (Juan Arcila). Vite 8 + React 19 + Tailwind CSS v4 (via `@tailwindcss/vite` plugin, no `tailwind.config.js`), react-router-dom v7, oxlint. No tests, no TypeScript, no formatter configured.
+> [!IMPORTANT]
+> This project is connected to [Lovable](https://lovable.dev). Avoid rewriting
+> published git history — force pushing, or rebasing/amending/squashing commits
+> that are already pushed — as it rewrites history on Lovable's side and the
+> user will likely lose their project history.
+>
+> Commits you push to the connected branch sync back to Lovable and show up in
+> the editor, so keep the branch in a working state.
 
-## Commands
+## What Lovable manages
 
-- `npm run dev` — Vite dev server
-- `npm run lint` — oxlint (config: `.oxlintrc.json`, plugins react+oxc)
-- `npm run build` — production build to `dist/` (sourcemaps off, manualChunks splits `vendor`/`router`)
-- `npm run preview` — preview built bundle
-- CI (`.github/workflows/deploy.yml`) runs `npm ci` → `npm run lint` → `npm run build`; a second job verifies `dist/index.html`, `sitemap.xml`, `robots.txt` exist on push to main/master.
+Rules outside this block are the project's own. Change the pieces below in
+Lovable, not by hand. With the [Lovable MCP](https://mcp.lovable.dev)
+connected, `send_message` asks Lovable to do it; otherwise ask the user to
+use the editor.
 
-## Architecture notes
+- **Database.** Do not add or edit `supabase/migrations/` or `drizzle/`.
+  Ask Lovable to change the schema.
+- **Generated files.** Do not edit a file whose header says it is automatically
+  generated.
+- **AI gateway.** Keep model calls on Lovable's gateway, and keep
+  `LOVABLE_API_KEY` out of browser code.
+- **Connectors.** Lovable provides native connectors. `list_connectors` shows
+  which are enabled; `add_connector` only returns the dashboard link. When a
+  connector is enabled, calls go through the connector gateway and need
+  `LOVABLE_API_KEY`. When Lovable does not provide one, users can bring their
+  own key and store it in Secrets.
+- **Secrets.** Lovable manages them. Do not put secret values in the repo.
 
-- Entry: `index.html` → `src/main.jsx` (BrowserRouter) → `src/App.jsx` (Header/Footer + Routes).
-- Routes are only `/`, `/cv`, `/contact`, `/contacto`. `src/pages/Proyectos.jsx` and `src/pages/banner.jsx` are NOT routed — they are embedded inside `src/pages/Home.jsx`. Don't add routes for them expecting them to be linked.
-- CV content lives in `src/data/cvData.js` keyed by language (`es`, `en`, `et`); `src/pages/CV.jsx` toggles `lang` state and prints via `window.print()`. Update data, not JSX, for CV changes.
-- Assets imported from `src/assets/` (webp images); public static files (PDF CV, logos, og-image) are in `public/` and copied verbatim to `dist/`. Note duplicate SPA redirect config: both `netlify.toml` `[[redirects]]` and `public/_redirects` exist.
-- Tailwind v4: styles are plain `@import "tailwindcss"` in `src/index.css`; theme customization goes through CSS `@theme`, not a JS config.
+<!-- LOVABLE:END -->
 
-## Conventions / gotchas
-
-- JSX files, no TS — don't introduce TypeScript without asking.
-- Lint is oxlint, not ESLint; no Prettier. Match existing style (no semicolons in some files, semicolons in others — follow the file you're editing).
-- Site is Spanish-first; nav/labels in Spanish, routes use `/contacto` (with `/contact` alias).
-- Deploy target is Netlify (`netlify.toml`: publish `dist`, Node 20, SPA fallback, security headers/CSP, cache headers for hashed assets).
-- CSP in netlify.toml allows Supabase domains but no Supabase client is installed — env vars for it are commented out in CI.
+- Portfolio content lives in src/data/portfolio.ts; pages only render it (single place to edit copy).
+- Page-turn transition: Shell keys the Outlet wrapper by pathname with .page-turn CSS (no animation lib needed).
+- SEO/share tags come only from pageMeta in src/lib/seo.ts; image URLs become absolute once SITE_URL is set (LinkedIn/WhatsApp need absolute og:image).
