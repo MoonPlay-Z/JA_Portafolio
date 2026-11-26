@@ -100,6 +100,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { name: "theme-color", content: "#ffffff" },
       { name: "author", content: "Juan Arcila" },
+      {
+        name: "google-site-verification",
+        content: "Qz4WVNPaaU9wBBrk0SKpPpMiLR7pB5j06jnF2p6TbBc",
+      },
       { property: "og:title", content: "Juan Arcila — Portafolio" },
       {
         property: "og:description",
