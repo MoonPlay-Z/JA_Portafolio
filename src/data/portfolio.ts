@@ -162,7 +162,7 @@ export const projects: Project[] = [
       "PostgreSQL",
       "Node.js",
     ],
-    url: "https://github.com/MoonPlay-Z/windytech",
+    url: "https://windytech.studio/",
     desc: "Sitio en español para Windytech, construido con Astro y CSS propio. Es un sitio solo de servicios: SEO, GEO, automatizaciones (WhatsApp Business), creación de páginas y sitios web, landing pages y software a medida. Incluye panel de administración, datos en vivo y navegación con transiciones fluidas.",
     year: "2026",
     role: "Creador y único desarrollador",
